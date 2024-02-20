@@ -1,0 +1,38 @@
+.clientes {
+    text-align: center;
+    padding: 0px 0;
+    margin: 2%;
+
+}
+
+.depoimentos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+.depoimento {
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.depoimento:hover {
+    transform: scale(1.05);
+}
+
+.cliente {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.section {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

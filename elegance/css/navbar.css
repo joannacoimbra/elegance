@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f3c0b0;
+    padding: 7px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nome {
+    color: #fff;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #a67771;
+    /* Cor ao passar o mouse */
+}
+
+.btn-agendar {
+    background-color: #e6a198;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.btn-agendar:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Ocultar a barra de navegação ao rolar para baixo */
+body.scrolled-down header {
+    top: -70px;
+}
+
+
+
+
+/*sanduiche*/
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #f3c0b0;
+        text-align: center;
+        z-index: 999;
+        transform: scaleY(0); /* Inicia com altura 0 para esconder */
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out; /* Adicionando a transição aqui */
+    }
+
+    .nav-list.active {
+        transform: scaleY(1); /* Altera a altura para 1 para mostrar */
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Adicione a camada escura */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com opacidade de 50% */
+    display: none;
+    z-index: 998; /* Um valor menor que o z-index da navegação para que a navegação fique acima da camada escura */
+}
+
+/* Ative a camada escura quando a navegação estiver ativa */
+.nav-list.active + .overlay {
+    display: block;
+}

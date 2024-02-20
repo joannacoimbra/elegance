@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* remover margens padrão do corpo da página */
+}
+
+/* estilizando o botão */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* ajustando para a esquerda */
+    background-color: rgba(245, 245, 245, 0.282); /* fazendo o fundo transparente */
+    backdrop-filter: blur(1px);
+    color: #000000; /* Cor do texto */
+    border: 2px solid #8d9092; /* borda para tornar visível */
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease; /* transição de cor de fundo */
+}
+
+#scrollToTopBtn:hover {
+    background-color: rgba(121, 116, 121, 0.631); /* cor de fundo com transparência ao passar o mouse */
+    color: #6c6d6f; /* mudando a cor do texto ao passar o mouse */
+}

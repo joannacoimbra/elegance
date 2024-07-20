@@ -1,0 +1,84 @@
+#procedimentos{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 0; 
+    background-color: #f9f9f9
+}
+.cor{
+    background-color: #f9f9f9
+}
+section {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 0px;
+}
+
+.imagem-container {
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    margin: 0 10px; /* espaçamento entre as imagens */
+    transition: transform 0.3s ease-in-out; /* transição para o efeito de movimento */
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagem:hover {
+    transform: scale(1.1); /* escala ao passar o mouse */
+}
+
+.imagem-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);/* fundo semi-transparente */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.imagem-container:hover .imagem-overlay {
+    opacity: 1; /* overlay visível quando o mouse */
+}
+
+.clientes {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.depoimentos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.depoimento {
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.depoimento:hover {
+    transform: scale(1.05);
+}
+
+.cliente {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/whatsapp.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/scrollBtn.css">
+    <link rel="stylesheet" href="./css/seções.css">
+    <link rel="stylesheet" href="./css/clientes.css">
+    <link rel="stylesheet" href="./css/quemsomos.css">
+    <link rel="stylesheet" href="./css/agendamento.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- biblioteca hover.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <title>Elegance - Clínica de Estética Feminina</title>
+</head>
+<header>
+    <nav class="navbar">
+        <div id="logo-container">
+            <img src="./images/lotus.png" alt="Logo da Clínica" class="logo">
+        </div>
+        <ul class="nav-list" id="nav-list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#procedimentos">Procedimentos</a></li>
+            <li><a href="#quem-somos">Quem Somos</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#agendamento" class="btn-agendar">Agendar Consulta</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+    <script src="./js/navbar.js" type="text/javascript"></script>
+</header>
+
+<body class="">
+    <div class="content">
+        <!-- botão de voltar ao topo -->
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">&#8679;</button>
+        <script src="./js/scrollBtn.js" type="text/javascript"></script>
+
+        <!-- carousel -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slide ativo">
+                    <img src="./images/banner1.png" alt="Slide 1">
+                </div>
+                <a href="#agendamento"></a>
+                <div class="slide">
+                    <img src="./images/banner2.png" alt="Slide 2">
+                </div>
+                </a>
+                <div class="slide">
+                    <img src="./images/banner3.png" alt="Slide 3">
+                </div>
+            </div>
+            <div class="indicadores"></div>
+        </div>
+        <script src="./js/carousel.js" type="text/javascript"></script>
+
+        <!-- botao de whatsapp -->
+        <a href="https://api.whatsapp.com/send?phone=SEUNUMERODOTELEFONE" target="_blank" class="whatsapp-btn">
+            <img src="./images/whats.png" alt="WhatsApp">
+        </a>
+
+        <!-- conteúdo do site -->
+        <div>
+            <h1 id="procedimentos" class="procedimentos">Conheça nossos Procedimentos</h1>
+        </div>
+        <section class="cor">
+            <div class="imagem-container">
+                <img class="imagem" src="./images/img1.jpeg" alt="Imagem 1">
+                <div class="imagem-overlay">A Toxina Botulínica, comumente conhecida como Botox, é um procedimento
+                    estético minimamente invasivo utilizado para suavizar linhas de expressão e rugas. Essa substância é
+                    aplicada diretamente nos músculos responsáveis pelas rugas faciais, impedindo temporariamente sua
+                    contração. O resultado é uma pele mais lisa e jovial, com redução visível de rugas na testa, ao
+                    redor dos olhos e entre as sobrancelhas. Além de seus benefícios estéticos, a Toxina Botulínica
+                    também é utilizada para tratar condições médicas, como hiperidrose (transpiração excessiva).</div>
+            </div>
+            <div class="imagem-container">
+                <img class="imagem" src="./images/img2.jpeg" alt="Imagem 2">
+                <div class="imagem-overlay">O Peeling Facial é um procedimento estético que visa renovar a camada
+                    superficial da pele, removendo células mortas e estimulando a regeneração celular. Existem
+                    diferentes tipos de peelings, desde os mais superficiais até os mais profundos, sendo escolhido de
+                    acordo com as necessidades individuais do paciente. Os peelings podem tratar uma variedade de
+                    problemas de pele, incluindo acne, manchas, rugas finas e textura irregular. O resultado é uma pele
+                    mais suave, com tom mais uniforme e aspecto rejuvenescido. O Peeling Facial é uma opção popular para
+                    quem busca melhorar a aparência da pele e alcançar um brilho saudável.</div>
+            </div>
+            <div class="imagem-container">
+                <img class="imagem" src="./images/img3.jpeg" alt="Imagem 3">
+                <div class="imagem-overlay">O Plasma Facial é um tratamento revolucionário que utiliza tecnologia de
+                    ponta para rejuvenescer a pele. Também conhecido como "lifting não cirúrgico", esse procedimento
+                    envolve a aplicação de plasma gerado a partir do próprio sangue do paciente. O plasma é rico em
+                    plaquetas e fatores de crescimento, promovendo a regeneração celular, estimulando a produção de
+                    colágeno e melhorando a textura da pele. Este tratamento é eficaz para redução de rugas, linhas
+                    finas, manchas e melhora da elasticidade da pele, proporcionando um aspecto mais jovem e
+                    revitalizado.
+                </div>
+            </div>
+        </section>
+
+        <!-- fale conosco - agende um horário -->
+        <section class="section">
+            <div id="faleconosco">
+                <a href="https://api.whatsapp.com/send?phone=SEUNUMERODOTELEFONE" target="_blank">
+                    <img src="./images/faleconosco.png" alt="Fale Conosco">
+                </a>
+            </div>
+        </section>
+
+        <!-- clientes -->
+        <h1 id="clientes" class="clientes">Clientes</h1>
+        <section class="clientes">
+            <div class="depoimentos">
+                <div class="depoimento">
+                    <p>"Simplesmente incrível! Minha experiência na clínica foi além das expectativas. Resultados
+                        surpreendentes!"</p>
+                    <span class="cliente">- Isabela Santos</span>
+                </div>
+                <div class="depoimento">
+                    <p>"A clínica proporciona um ambiente maravilhoso. Os profissionais são atenciosos e os resultados
+                        são notáveis."</p>
+                    <span class="cliente">- Camila Oliveira</span>
+                </div>
+                <div class="depoimento">
+                    <p>"A atenção aos detalhes e a competência dos profissionais fazem desta clínica o melhor lugar para
+                        cuidar da beleza."</p>
+                    <span class="cliente">- Laura Mendes</span>
+                </div>
+                <div class="depoimento">
+                    <p>"Encontrei na clínica o equilíbrio perfeito entre profissionalismo e acolhimento. Recomendo a
+                        todos!"</p>
+                    <span class="cliente">- Julia Costa</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- quem somos -->
+        <script src="./js/quemsomos.js"></script>
+        <section id="quem-somos">
+            <div class="conteudo">
+                <h2>Quem Somos</h2>
+                <p>Somos uma empresa dedicada a proporcionar experiências de beleza e bem-estar para mulheres. Desde a
+                    nossa fundação, buscamos...</p>
+            </div>
+        </section>
+
+        <!-- agendamento -->
+        <script src="./js/agendamento.js" type="text/javascript"></script>
+        <section id="agendamento">
+            <div class="container">
+                <h2>Agende um Horário</h2>
+                <form id="formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                    <button type="button" id="enviar">Agendar</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+<!-- rodapé -->
+<footer>
+    <div class="logo-contato">
+        <img src="./images/lotus.png" alt="Logo do Site">
+    </div>
+
+    <div class="navegacao">
+        <a href="#/" class="hvr-underline-from-left">Página Inicial</a>
+        <a href="#quem-somos" class="hvr-underline-from-left">Quem Somos</a>
+        <a href="#procedimentos" class="hvr-underline-from-left">Procedimentos</a>
+        <a href="#faleconosco" class="hvr-underline-from-left">Contato</a>
+    </div>
+
+    <div class="direitos">
+        <p>&copy; Elegance | Clinica de Estática Feminina. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+</html>

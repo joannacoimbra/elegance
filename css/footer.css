@@ -1,0 +1,29 @@
+footer {
+    background-color: #a67771; 
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-contato {
+    display: flex;
+    align-items: center;
+}
+
+.logo-contato img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.navegacao a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.direitos p {
+    margin: 0;
+    color: white;
+}

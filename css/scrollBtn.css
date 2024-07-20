@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    background-color: rgba(245, 245, 245, 0.282); /* fundo transparente */
+    backdrop-filter: blur(1px);
+    color: #000000; 
+    border: 2px solid #8d9092; 
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: rgba(121, 116, 121, 0.631); /* cor de fundo transparente ao passar o mouse */
+    color: #6c6d6f; /* muda a cor do texto quando passar o mouse */
+}
